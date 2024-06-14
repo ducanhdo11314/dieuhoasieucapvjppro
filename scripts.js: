@@ -1,0 +1,17 @@
+let acOn = false;
+
+function toggleAC() {
+    acOn = !acOn;
+    const statusElement = document.getElementById('status');
+    const toggleButton = document.getElementById('toggleButton');
+    
+    if (acOn) {
+        statusElement.textContent = "Trạng thái: Bật";
+        toggleButton.textContent = "Tắt";
+        toggleButton.style.backgroundColor = "#dc3545";
+    } else {
+        statusElement.textContent = "Trạng thái: Tắt";
+        toggleButton.textContent = "Bật";
+        toggleButton.style.backgroundColor = "#007bff";
+    }
+}
